@@ -9,8 +9,6 @@ import turtle
 # Most of the current imports are not doing much and are unnecessary but i do like to add them anyway as i see it as a good practice.
 # Do not worry about most of them as they are not really required unless you want to do very particular things.
 
-dict1 = {}
-
 # Ignore these functions as they are not part of the course so far
 """ def b1w():
     o = open("file.dat", "wb")
