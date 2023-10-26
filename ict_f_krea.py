@@ -9,34 +9,8 @@ import turtle
 # Most of the current imports are not doing much and are unnecessary but i do like to add them anyway as i see it as a good practice.
 # Do not worry about most of them as they are not really required unless you want to do very particular things.
 
-dict1 = {}
 
-# Ignore these functions as they are not part of the course so far
-""" def b1w():
-    o = open("file.dat", "wb")
-    l = int(input("Enter the number of letters or numbers: "))
-    l1 = []
-    for i in range(l):
-        m = input("Enter number or letter: ")
-        l1.append(m)
-    pickle.dump(l1, o)
-    o.close()
-
-
-def b1r():
-    o = open("file.dat", "rb")
-    f = pickle.load(o)
-    print(f)
-
-    o.close()
-
-
-# b1w()
-# b1r() """
-# You may now stop ignoring funcitons :).
-
-
-# print(math.pi) <- If you would like to print pi. I use it to figure out if there is an error before this. If there is, this will not run and show me that the error is before this. 
+print(math.pi) # Printing pi. I use it to figure out if there is an error before this. If there is, this will not run. 
 # If it does show, then it means the error is after this, making it easy to debug. 
 
 
