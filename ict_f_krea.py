@@ -10,7 +10,7 @@ import turtle
 # Do not worry about most of them as they are not really required unless you want to do very particular things.
 
 
-print(math.pi) # Printing pi. I use it to figure out if there is an error before this. If there is, this will not run. 
+print(math.pi) # Printing pi. I use it to figure out if there is an error before this. If there is, this will not run.
 # If it does show, then it means the error is after this, making it easy to debug. 
 
 
