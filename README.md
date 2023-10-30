@@ -1,2 +1,2 @@
-# KreaCS
-Krea CS stuff + notes regarding the classes
+# Krea_ICT_F
+ICT_F stuff + notes regarding the classes
