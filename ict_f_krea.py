@@ -116,3 +116,45 @@ def turtlesomewhatadvanced():
 
 
 # turtlesomewhatadvanced()
+
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+     result = 0
+  return result
+
+# tri_recursion(6)
+
+def list_sum(n_list):
+    if len(n_list) == 1:
+        return n_list[0]
+    else:
+        return n_list[0] + list_sum(n_list[1:])
+    
+# print(list_sum([1, 2, 3, 5, 6, 12, 13]))
+
+def forloopAdding(l1):
+    a = 0
+    for i in l1:
+        a += i
+    print(a)
+
+# forloopAdding([1, 2, 3, 5, 6, 12, 13])
+
+def recursive_fibonacci(n):
+  if n <= 1:
+      return n
+  else:
+      return(recursive_fibonacci(n-1) + recursive_fibonacci(n-2))
+ 
+n_terms = 10
+ 
+# check if the number of terms is valid
+""" if n_terms <= 0:
+  print("Invalid input ! Please input a positive value")
+else:
+  print("\nFibonacci series:")
+for i in range(n_terms):
+    print(recursive_fibonacci(i)) """
