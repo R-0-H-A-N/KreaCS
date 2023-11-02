@@ -193,3 +193,10 @@ def date_2_11_23():
         print('please try again in: ',h , 'years')
 
 # date_2_11_23()
+
+def backward_couting():
+    n = 10
+    for i in range(0, -n-1, -1):
+        print(i)
+
+# backward_couting()
