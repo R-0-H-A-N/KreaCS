@@ -3,6 +3,7 @@ import time
 import pickle
 import datetime
 import turtle
+from decimal import Decimal
 # import pandas
 # import matplotlib
 
@@ -158,3 +159,37 @@ else:
   print("\nFibonacci series:")
 for i in range(n_terms):
     print(recursive_fibonacci(i)) """
+
+def variable_type():
+    a = 1.0000000000000000000000000000000000000000000000000000000000000000001
+    print(type(a))
+    print(a)
+    int(input('Brrrr: ')) # This input will only allow for integer data values and throw and error if thats not the case
+    input('Brrrrrrrr: ') # This input will allow for any input and store it as a string
+    print(Decimal(a)) # Using the Decimal library
+    print(type(Decimal(a)))
+
+
+# variable_type()
+
+
+def date_2_11_23():
+    age = int(input('Enter your age here: '))
+    region = input('Enter your region here: ')
+    if age > 18 and region == 'tada':
+        print('congrats, you are eligible to vote')
+        if age > 70:
+            print('Do you need any help?')
+            help_age = input('Yes(y)/No(n): ')
+            if help_age == 'y':
+                print('*insert helpful things here')
+            elif help_age == 'n':
+                print('Okay, you do not need any help')
+            else:
+                print('Invalid input')
+    else:
+        print('You are not eligible')
+        h = 18 - age
+        print('please try again in: ',h , 'years')
+
+# date_2_11_23()
