@@ -4,6 +4,8 @@ import pickle
 import datetime
 import turtle
 from decimal import Decimal
+import random # This is the random module
+
 # import pandas
 # import matplotlib
 
@@ -150,7 +152,7 @@ def recursive_fibonacci(n):
   else:
       return(recursive_fibonacci(n-1) + recursive_fibonacci(n-2))
  
-n_terms = 10
+n_terms = 40
  
 # check if the number of terms is valid
 """ if n_terms <= 0:
@@ -159,6 +161,7 @@ else:
   print("\nFibonacci series:")
 for i in range(n_terms):
     print(recursive_fibonacci(i)) """
+
 
 def variable_type():
     a = 1.0000000000000000000000000000000000000000000000000000000000000000001
@@ -200,3 +203,59 @@ def backward_couting():
         print(i)
 
 # backward_couting()
+
+def factorialOfaNumber():
+    n = int(input('Enter a number you would like to take a factorial for: '))
+    m = 1
+    while n > 0:
+        m = m * n
+        n = n - 1 
+    print(m)
+
+# factorialOfaNumber()
+
+def adding_allDigits_Of_a_Number():
+    n = int(input('Enter the number: '))
+    m = str(n)
+    j = 0
+    for i in m:
+        j = j + int(i)
+    print(j)
+
+# addingallDigitssOfaNumber()
+
+def remainder_Devision_Method_for_Adding_Digits():
+    n = int(input('Enter the number you would like to add: '))
+    sumDigits = 0
+    while n > 0:
+        b = n % 10
+        sumDigits = sumDigits + b
+        n = int(n / 10)
+    print(sumDigits)
+
+# remainder_Devision_Method_for_Adding_Digits()
+
+def checking_Prime():
+    n = int(input('Enter a number (>=2): '))
+    m = 0
+    for i in range(1, n+1):
+        if n % i == 0:
+            m += 1
+        else:
+            continue
+    if m > 2:
+        print('Number is not prime')
+    else:
+        print('Number is prime')
+
+# checking_Prime()
+
+def random_number():
+    m = random.randint(10, 200)
+    if m % 2 == 0:
+        print('Number is even')
+    else:
+        print('Number is odd')
+    print('The number:', m)
+    
+# random_number()
