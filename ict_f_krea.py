@@ -28,9 +28,7 @@ def addingBinaryNUmbers():
 
     print(" 15 + 16 = 31 \n 1111 + 10000 = 11111 == 1 + 2 + 4 + 8 + 16 = 31")
 
-
 # addingBinaryNUmbers()
-
 
 def loopsExamples():
     for i in range(10):
@@ -40,7 +38,6 @@ def loopsExamples():
     while a > 0:
         print("r")
         a -= 1
-
 
 # loopsExamples()
 
@@ -117,7 +114,6 @@ def turtlesomewhatadvanced():
     time.sleep(5)
     turtle.done()
 
-
 # turtlesomewhatadvanced()
 
 def tri_recursion(k):
@@ -152,16 +148,16 @@ def recursive_fibonacci(n):
   else:
       return(recursive_fibonacci(n-1) + recursive_fibonacci(n-2))
  
-n_terms = 40
+n_terms = 11
  
 # check if the number of terms is valid
 """ if n_terms <= 0:
   print("Invalid input ! Please input a positive value")
 else:
   print("\nFibonacci series:")
-for i in range(n_terms):
+  print(recursive_fibonacci(n_terms))
+for i in range(n_terms + 1):
     print(recursive_fibonacci(i)) """
-
 
 def variable_type():
     a = 1.0000000000000000000000000000000000000000000000000000000000000000001
@@ -172,9 +168,7 @@ def variable_type():
     print(Decimal(a)) # Using the Decimal library
     print(type(Decimal(a)))
 
-
 # variable_type()
-
 
 def date_2_11_23():
     age = int(input('Enter your age here: '))
@@ -259,3 +253,51 @@ def random_number():
     print('The number:', m)
     
 # random_number()
+
+def listtraversing():
+    l1 = ['hello', 10, True, 10.3]
+    for i in range(len(l1)):
+        print(l1[i])
+        print('\n')
+
+# listtraversing()
+
+def sum_list():
+    q = 0
+    l2 = [100, 200, 2, 4, 123]
+    for i in l2:
+        q = q + i
+    print(q)
+
+# sum_list()
+
+def max_min_list():
+    l3 = [100, 23, 2323, 23, 9]
+    print('The max of the list (Using the max() funtion):', max(l3))
+    print('The min of the list (Using the min() funtion):', min(l3))
+
+    # Using the long method
+    m = 0
+    for i in l3:
+        if i > m:
+            m = i
+        else: 
+            continue
+    print('The max of the list (Without using the max() funtion):', m)
+
+    # lenght of the list without using len()
+    s = 0
+    for i in l3:
+        s += 1
+    print('The lenght of the list (without using the len() funtion):', s)
+
+    # Minimum of a list wihout using the min() function
+    m1 = 100000
+    for i in l3:
+        if i < m1:
+            m1 = i
+        else: 
+            continue
+    print('The minimum of the list (Without using the min() function):', m1)
+
+#  max_min_list()
