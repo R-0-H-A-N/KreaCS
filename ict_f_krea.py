@@ -229,7 +229,7 @@ def remainder_Devision_Method_for_Adding_Digits():
 
 # remainder_Devision_Method_for_Adding_Digits()
 
-def checking_Prime():
+def checking_Prime():       # Checking if the number is prime
     n = int(input('Enter a number (>=2): '))
     m = 0
     for i in range(1, n+1):
@@ -244,7 +244,7 @@ def checking_Prime():
 
 # checking_Prime()
 
-def random_number():
+def random_number():        # Random number generator + odd or even definer
     m = random.randint(10, 200)
     if m % 2 == 0:
         print('Number is even')
@@ -254,7 +254,7 @@ def random_number():
     
 # random_number()
 
-def listtraversing():
+def listtraversing():       # Traversing through the list
     l1 = ['hello', 10, True, 10.3]
     for i in range(len(l1)):
         print(l1[i])
@@ -262,7 +262,7 @@ def listtraversing():
 
 # listtraversing()
 
-def sum_list():
+def sum_list():     # Sum of all elemets in a list
     q = 0
     l2 = [100, 200, 2, 4, 123]
     for i in l2:
@@ -301,3 +301,54 @@ def max_min_list():
     print('The minimum of the list (Without using the min() function):', m1)
 
 #  max_min_list()
+
+# 23/11/23 Class
+def list_opperations():
+    # Adding elements to the list using the append funtion
+    l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'hello']
+    print(l1)
+    l1.append('world')
+    print(l1)
+    l1.insert(2, 'no') # Inserting into a certain index
+
+    # Removing elements from the list (using the pop function)
+    l1.pop(3)
+    print(l1)
+
+    # Removing elements from a list using the remove() function
+    l1.remove(5)
+    print(l1)
+
+
+# list_opperations()
+
+def finding_value_in_a_list():      # Finding a certain value in a list + the index of the element
+    q = [12, 23, 44, 34, 543, 123, 343, 12, 12, 343]
+    w = 0
+    for i in q:
+        if i == 123:
+            print('It is here at the index:', w)
+        else:
+            pass
+        w = w + 1
+
+# finding_value_in_a_list()
+
+def sum_list_2():         # Summing all the the elements of a list (Same as the funtion sum_list())
+    t = [1, 2, 3, 4, 5, 6, 7, 8]
+    r = 0
+    for i in t:
+        r += i
+    print(r)
+
+# sum_list_2()
+
+def sum_half_list():
+    q = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    l = len(q)/2
+    m = 0
+    for i in range(int(l)):
+        m += i
+    print(m)
+    
+#nsum_half_list()
