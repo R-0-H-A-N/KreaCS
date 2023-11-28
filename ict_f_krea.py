@@ -272,7 +272,7 @@ def sum_list():     # Sum of all elemets in a list
 # sum_list()
 
 def max_min_list():
-    l3 = [100, 23, 2323, 23, 9]
+    l3 = [100, 23, 2323, 23, 9, 343, 123143, 545, 463, 342, 3231, 89890, 342]
     print('The max of the list (Using the max() funtion):', max(l3))
     print('The min of the list (Using the min() funtion):', min(l3))
 
@@ -292,13 +292,22 @@ def max_min_list():
     print('The lenght of the list (without using the len() funtion):', s)
 
     # Minimum of a list wihout using the min() function
-    m1 = 100000
+    m1 = 1000000000
     for i in l3:
         if i < m1:
             m1 = i
         else: 
             continue
     print('The minimum of the list (Without using the min() function):', m1)
+
+    # Maximum of the list without using the max() function
+    m2 = 0
+    for i in l3:
+        if i > m2:
+            m2 = i
+        else:
+            continue
+    print('Max number in the list is:', m2)
 
 #  max_min_list()
 
@@ -351,4 +360,14 @@ def sum_half_list():
         m += i
     print(m)
     
-#nsum_half_list()
+# sum_half_list()
+    
+def sum_half_list_reverse():
+    q = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    l = len(q)/2
+    m = 0
+    for i in range(-1 ,-int(l), -1):
+        m += q[i]
+    print(m)
+
+sum_half_list_reverse()
