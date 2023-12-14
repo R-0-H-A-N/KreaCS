@@ -367,7 +367,16 @@ def sum_half_list_reverse():
     l = len(q)/2
     m = 0
     for i in range(-1 ,-int(l), -1):
+        print(i)
         m += q[i]
     print(m)
 
-sum_half_list_reverse()
+# sum_half_list_reverse()
+
+def rec_factorial(n):
+    if n == 1:
+        return 1
+    return n*rec_factorial(n-1)
+
+""" n = int(input('Enter a number: '))
+print(rec_factorial(n)) """
