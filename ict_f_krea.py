@@ -152,7 +152,7 @@ n_terms = 11
  
 # check if the number of terms is valid
 """ if n_terms <= 0:
-  print("Invalid input ! Please input a positive value")
+  print("Invalid input! Please input a positive value")
 else:
   print("\nFibonacci series:")
   print(recursive_fibonacci(n_terms))
@@ -380,3 +380,22 @@ def rec_factorial(n):
 
 """ n = int(input('Enter a number: '))
 print(rec_factorial(n)) """
+
+def rec_example1(x):
+    if x > 5:
+        return
+    rec_example1(x+1)
+    print('Condition not met')
+    
+
+# rec_example1(0)
+
+def sumlist_rec(a, i, s):
+    if i == len(a):
+        return s
+    else:
+        s = s + a[i]
+    return sumlist_rec(a, i+1, s+1)
+
+a = [1, 2, 3, 4, 5]
+print(sumlist_rec(a, 0, 0))
