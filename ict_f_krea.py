@@ -449,7 +449,7 @@ def sorting():
         return s
     print(bubblesort(sl))
 
-sorting()
+# sorting()
 
 def swapping():
     o = [1, 2]
