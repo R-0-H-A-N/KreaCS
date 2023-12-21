@@ -426,7 +426,7 @@ def sorting():
 
     # print(sort())
 
-    def recsort(qwe):
+    def recsort(qwe):   # Does not work
         if len(qwe) == 0:
             return
         else:
@@ -434,7 +434,6 @@ def sorting():
             qwe.remove(q)
             wer = qwe
             recsort(wer)
-        return 
 
     # print(recsort(sl))
     
@@ -447,7 +446,7 @@ def sorting():
                     s[j] = s[j+1]
                     s[j+1] = m
         return s
-    print(bubblesort(sl))
+    # print(bubblesort(sl))
 
 # sorting()
 
