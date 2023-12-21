@@ -400,7 +400,9 @@ def sumlist_rec(a, i, s):
 """ a = [1, 2, 3, 4, 5]
 print(sumlist_rec(a, 0, 0)) """
 
-def TowerOfHanoi(n , s_pole, d_pole, i_pole):           
+# For the tower of Hanoi, n = 1, t(n) = 1. n = 2, t(n) = 3 and so on.
+
+def TowerOfHanoi(n , s_pole, d_pole, i_pole):   # s is the first pole, d the second pole and i the third pole
     if n == 1:
         print("Move disc 1 from pole",s_pole,"to pole",d_pole)
         return
@@ -408,6 +410,52 @@ def TowerOfHanoi(n , s_pole, d_pole, i_pole):
     print("Move disc",n,"from pole",s_pole,"to pole",d_pole)
     TowerOfHanoi(n-1, i_pole, d_pole, s_pole)
  
-""" n = 3
+""" n = 4   # When n = 4, there will be 15 + 1 + 15 moves, therefore 
 TowerOfHanoi(n, 'A', 'C', 'B')
  """
+
+def sorting():
+    sl = [2, 3, 1, 6, 4]
+    sl1 = []
+    def sort():
+        for i in range(len(sl)):
+            minnum = min(sl)
+            sl.remove(minnum)
+            sl1.append(minnum)
+        return sl1
+
+    # print(sort())
+
+    def recsort(qwe):
+        if len(qwe) == 0:
+            return
+        else:
+            q = min(qwe)
+            qwe.remove(q)
+            wer = qwe
+            recsort(wer)
+        return 
+
+    # print(recsort(sl))
+    
+    def bubblesort(s):
+        k = len(s)
+        for i in range(k):
+            for j in range(k-1):
+                if s[j] > s[j+1]:
+                    m = s[j]
+                    s[j] = s[j+1]
+                    s[j+1] = m
+        return s
+    print(bubblesort(sl))
+
+sorting()
+
+def swapping():
+    o = [1, 2]
+    p = o[0]
+    o[0] = o[1]
+    o[1] = p
+    print(o)
+
+# swapping()
